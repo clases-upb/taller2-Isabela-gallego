@@ -88,11 +88,7 @@ public class App {
             if (consumo <= 0) {
                 return "Error calculando consumo";
             }
-            String resultado = String.format("valor comida: $%.1f - valor propina $%.1f - valor impoconsumo $%.1f - total a pagar $%.1f",         consumo, propina, im_consumo, total_pagar);
-            resultado = resultado.replace(',', '.');
-
-
-          return resultado;
+            return "valor comida: " + "$" + consumo + " - " + "valor propina " + "$" + propina + " - " + "valor impoconsumo " + "$" + im_consumo + " - " + "total a pagar " + "$" + total_pagar;
         } catch (Exception e) {
             return "Error en la función Calcular_tip";
         }
